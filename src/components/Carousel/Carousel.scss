@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainContainer {
+  .back-image-slider {
+    position: absolute;
+
+    img {
+      width: 100vw;
+      height: 90vh;
+    }
+  }
+  .upper-slider-container {
+    .box {
+      position: relative;
+      // width: 379.75px;
+      height: 90vh;
+      background-color: rgba(0, 0, 0, 0.32);
+      border: 1px solid transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      .parent {
+        width: 90%;
+        .headers {
+          text-align: left;
+
+          h3 {
+            text-align: left;
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 1.2;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+
+        .headers-active {
+          margin-bottom: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+          transition-delay: 0.3s;
+        }
+
+        .content {
+          position: relative;
+          // padding: 10px 15px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.6s ease-in-out;
+          color: white;
+          width: 100%;
+
+          p {
+            text-align: left;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
+            max-width: 800px;
+            // white-space: pre-wrap;
+          }
+        }
+
+        .content-active {
+          visibility: visible;
+          opacity: 1;
+          // width: 65%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition-delay: 0.3s;
+          margin-bottom: 30px;
+        }
+
+        .learn-more {
+          position: relative;
+          // padding: 10px 15px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.6s ease-in-out;
+
+          button {
+            border: none;
+            background: transparent;
+            font-size: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #ff04d5;
+          }
+        }
+
+        .learn-more-active {
+          visibility: visible;
+          opacity: 1;
+          width: 40%;
+          transition-delay: 0.3s;
+          color: #ff04d5;
+          margin-bottom: 30px;
+          width: 60%;
+        }
+      }
+    }
+    .box-active {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.32),
+        rgba(0, 0, 0, 0.64)
+      );
+    }
+  }
+}
